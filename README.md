@@ -5,3 +5,5 @@ This code was developed to be used as an include which will display the forecast
 
 The Weather Underground API can be found here, you'll need to get your own API key:
 https://www.wunderground.com/weather/api/
+
+NOTE: You will need to manually add a location record to the weather table where the 'location' column matches the location id you specify in the php.  If you skip this step it will not be able to determine when the last update occured and you will get an error.
