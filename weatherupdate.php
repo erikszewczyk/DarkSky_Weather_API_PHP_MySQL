@@ -16,7 +16,7 @@ $latlong = "[37.8267,-122.4233]"; //The latitude and longitude of your location
     }
 
 //Get the latest weather data
-$url = "https://api.darksky.net/forecast/5473d8c7ed504d607e67bfdcddc2f2e0/" . $latlong;
+$url = "https://api.darksky.net/forecast/[yourapikey]/" . $latlong;
 $forecast = json_decode(file_get_contents($url));
 $day0_weekday_short = date("D", $forecast->daily->data[0]->time);
 $day0_icon_url = "https://darksky.net/images/weather-icons/" . $forecast->daily->data[0]->icon . ".png";
